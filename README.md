@@ -25,7 +25,13 @@ Load from GCS into BQ, specifying source format
 bq load --source_format=[file format] [dataset].[table] [source GCS Path]
 # examples:
 bq load --source_format=AVRO ecommerce.order_items   gs://company-demo-bq-global-raw-data/raw_avro/order_items/*
-bq load --source_format=PARQUET ecommerce.order_items   gs://company-demo-bq-global-raw-data/raw_avro/order_items/*
+bq load --source_format=PARQUET ecommerce.order_items   gs://company-demo-bq-global-raw-data/raw_parquet/order_items/*
+```
+Specifying project id: bq load differs from standar gcloud, where is simply used --project. In bq load, should be used --project_id
+```
+bq load --project_id [Project ID] (...)
+# example
+bq load --project_id vmsilva-sandbox-company --source_format=PARQUET company_training_raw.Sales   gs://dataproc_output_files/COMPANY_Training/Sales/*.parquet
 ```
 
 
