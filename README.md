@@ -17,6 +17,12 @@ Get Bucket files size, human readable and as summary
 gsutil du -s -h gs://company-demo-bq-global-raw-data
 ```
 
+## CloudSQL
+Stop an instance
+```
+gcloud sql instances patch INSTANCE_NAME \
+--activation-policy=NEVER
+```
 
 ## Biqquery
 ### bq cli
