@@ -44,5 +44,7 @@ bq load --project_id vmsilva-sandbox-company --source_format=PARQUET company_tra
 Export BQ schema to json
 ```
 bq show --format=prettyjson [PROJECT]:[DATASET].[TABLE] | jq '.schema.fields'
+Example:
+bq show --format=prettyjson bigquery-public-data:samples.wikipedia | jq '.schema.fields'
 ```
 
