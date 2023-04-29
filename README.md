@@ -41,4 +41,8 @@ bq load --project_id [Project ID] (...)
 bq load --project_id vmsilva-sandbox-company --source_format=PARQUET company_training_raw.Sales   gs://dataproc_output_files/COMPANY_Training/Sales/*.parquet
 ```
 
+Export BQ schema to json
+```
+bq show --format=prettyjson [PROJECT]:[DATASET].[TABLE] | jq '.schema.fields'
+```
 
