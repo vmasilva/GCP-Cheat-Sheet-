@@ -48,3 +48,10 @@ Example:
 bq show --format=prettyjson bigquery-public-data:samples.wikipedia | jq '.schema.fields'
 ```
 
+### BQ - Logging
+Get BQ iteractions by user
+```
+resource.type="bigquery_resource"
+protoPayload.authenticationInfo.principalEmail="user@domain.com"
+```
+
