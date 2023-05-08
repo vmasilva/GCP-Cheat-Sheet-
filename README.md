@@ -56,6 +56,7 @@ protoPayload.authenticationInfo.principalEmail="user@domain.com"
 
 
 ## Logging
+https://cloud.google.com/logging/docs/overview
 ### Logging Types:
 - Platform Logs
 - Component Logs
