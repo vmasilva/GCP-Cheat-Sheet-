@@ -40,7 +40,6 @@ bq load --project_id [Project ID] (...)
 # example
 bq load --project_id vmsilva-sandbox-company --source_format=PARQUET company_training_raw.Sales   gs://dataproc_output_files/COMPANY_Training/Sales/*.parquet
 ```
-
 Export BQ schema to json
 ```
 bq show --format=prettyjson [PROJECT]:[DATASET].[TABLE] | jq '.schema.fields'
@@ -55,3 +54,13 @@ resource.type="bigquery_resource"
 protoPayload.authenticationInfo.principalEmail="user@domain.com"
 ```
 
+
+## Logging
+### Logging Types:
+- Platform Logs
+- Component Logs
+- Security Logs
+  - Cloud Audit
+  - Access Transparency
+- User-written logs
+- Multi-cloud / Hybrid.Cloud logs
