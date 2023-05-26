@@ -26,6 +26,13 @@ gcloud sql instances patch INSTANCE_NAME \
 
 ## Biqquery
 ### bq cli
+Create a new table
+bq mk --table [PROJECT]:[DATASET].[TABLE] [path to json schema file] 
+example:
+```
+bq mk --table  vmsilva-sandbox-company:sells_dataset.my_new_table  ./table_shema.json
+```
+
 Load from GCS into BQ, specifying source format
 ```
 bq load --source_format=[file format] [dataset].[table] [source GCS Path]
