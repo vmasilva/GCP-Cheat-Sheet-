@@ -72,3 +72,16 @@ https://cloud.google.com/logging/docs/overview
   - Access Transparency
 - User-written logs
 - Multi-cloud / Hybrid.Cloud logs
+
+### Audit Logging
+Get the event of project creation.
+Querying at Project Level:
+```
+protoPayload.methodName="CreateProject"
+```
+Querying at Folder or Organization Level:
+```
+protoPayload.methodName="CreateProject"
+protoPayload.resourceName="projects/PROJECT-ID"
+```
+
