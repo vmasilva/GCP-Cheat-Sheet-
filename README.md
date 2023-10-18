@@ -74,14 +74,16 @@ https://cloud.google.com/logging/docs/overview
 - Multi-cloud / Hybrid.Cloud logs
 
 ### Audit Logging
-Get the event of project creation.
-Querying at Project Level:
+#### Project Events
+Get the event of project creation.  
+Could be queried at Project, Folder or Organization Level.
 ```
 protoPayload.methodName="CreateProject"
+protoPayload.resourceName="projects/[PROJECT-ID]"  (Optional)
 ```
-Querying at Folder or Organization Level:
+Get the event of project creation by user.  
+Could be queried at Project, Folder or Organization Level.
 ```
 protoPayload.methodName="CreateProject"
-protoPayload.resourceName="projects/PROJECT-ID"
+protoPayload.authenticationInfo.principalEmail="[USER EMAIL]"
 ```
-
