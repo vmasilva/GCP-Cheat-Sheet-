@@ -54,6 +54,11 @@ Example:
 bq show --format=prettyjson bigquery-public-data:samples.wikipedia | jq '.schema.fields'
 ```
 
+BQ tables metadata and Information Schema  
+https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/data-engineering/demos/information_schema.md
+
+
+
 ### BQ - Logging
 Get BQ iteractions by user
 ```
