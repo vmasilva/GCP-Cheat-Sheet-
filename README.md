@@ -17,6 +17,15 @@ Get Bucket files size, human readable and as summary
 gsutil du -s -h gs://company-demo-bq-global-raw-data
 ```
 
+Get Total Space of all buckets in a project, human readable and as summary
+```
+gsutil  du -shc
+
+# Or, to specify a different project:
+gsutil -o GSUtil:default_project_id=<Project ID> du -shc
+```
+
+
 ## CloudSQL
 Stop an instance
 ```
