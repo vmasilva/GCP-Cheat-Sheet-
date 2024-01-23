@@ -101,3 +101,17 @@ Could be queried at Project, Folder or Organization Level.
 protoPayload.methodName="CreateProject"
 protoPayload.authenticationInfo.principalEmail="[USER EMAIL]"
 ```
+
+
+
+## Costs
+### BQ queries on Billing export dataset
+
+Get all costs on a specific data
+```
+SELECT * FROM `[Project].[Dataset].gcp_billing_export_resource_v1_[Billing Account ID]` 
+WHERE TIMESTAMP_TRUNC(_PARTITIONTIME, DAY) = TIMESTAMP("2024-01-23") LIMIT 1000
+```
+
+
+
