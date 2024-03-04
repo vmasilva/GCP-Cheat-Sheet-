@@ -85,6 +85,14 @@ Example:
 gcurl https://discoveryengine.googleapis.com/v1beta/projects/vmsilva-sandbox-company/locations/global/collections/default_collection/engines
 ```
 
+List all datastores
+```
+gcurl https://discoveryengine.googleapis.com/v1beta/projects/[PROJECT_ID]/locations/[LOCATION]/collections/[COLLECTION]/dataStores
+Example:
+gcurl https://discoveryengine.googleapis.com/v1beta/projects/vmsilva-sandbox-company/locations/global/collections/default_collection/dataStores
+```
+
+
 ## Logging
 https://cloud.google.com/logging/docs/overview
 ### Logging Types:
