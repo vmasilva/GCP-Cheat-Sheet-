@@ -102,6 +102,18 @@ protoPayload.methodName="CreateProject"
 protoPayload.authenticationInfo.principalEmail="[USER EMAIL]"
 ```
 
+## Google Curl
+### use gcurl alias to authenticate curl requests:
+```
+alias gcurl='curl -H "Authorization: Bearer $(gcloud auth print-access-token)" -H "Content-Type: application/json"'
+```
+### Force GCP quota project
+To specify the quota project (the project that will receive the request, and also be charged) the gcloud command **gcloud auth application-default set-quota-project [PROJECT-ID]** shuold work, however, sometimes even after running this command, the curl command does not uses the desired project. 
+To force the quota project in request, use the following header: **X-Goog-User-Project**  
+Example:
+```
+curl -H "X-Goog-User-Project: [project-id]" ...
+```
 
 
 ## Costs
