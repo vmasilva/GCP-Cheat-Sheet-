@@ -79,10 +79,10 @@ protoPayload.authenticationInfo.principalEmail="user@domain.com"
 ## Vertex Search & Conversation
 ### Rest APIs
 List all engines
-gcurl https://discoveryengine.googleapis.com/v1beta/projects/[PROJECT_ID]/locations/[LOCATION]/collections/[COLLECTION]/engines
-example:
 ```
-gcurl -H "X-Goog-User-Project: vmsilva-sandbox-company"   https://discoveryengine.googleapis.com/v1beta/projects/vmsilva-sandbox-company/locations/global/collections/default_collection/engines
+gcurl https://discoveryengine.googleapis.com/v1beta/projects/[PROJECT_ID]/locations/[LOCATION]/collections/[COLLECTION]/engines
+Example:
+gcurl https://discoveryengine.googleapis.com/v1beta/projects/vmsilva-sandbox-company/locations/global/collections/default_collection/engines
 ```
 
 ## Logging
