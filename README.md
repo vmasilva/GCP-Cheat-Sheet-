@@ -144,3 +144,14 @@ WHERE TIMESTAMP_TRUNC(_PARTITIONTIME, DAY) = TIMESTAMP("2024-01-23") LIMIT 1000
 
 
 
+# PostgreSQL Cheat Cheet
+
+## Activate vector extension
+```
+sad
+```
+
+## Create User
+
+
+
