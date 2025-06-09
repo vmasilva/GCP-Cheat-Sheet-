@@ -157,12 +157,20 @@ sad
 
 # Cloud Run
 
-## Invoke Cloud Run Authenticated Services
-Google Cloud offers an authentication, out-of-the box, requiring authentication of the requester. This authentication, is verified via HTTP Headers. These Headers can be added in multiways, such as:
+## Authnetication - Invoke Cloud Run Authenticated Services  
+Find complete info: https://cloud.google.com/run/docs/authenticating/overview  
+Google Cloud offers an authentication, out-of-the box, requiring authentication of the requester. This authentication, is verified via HTTP Headers. These Headers can be added in multiways, such as:  
+
+
 1 - gcurl.
 See seciton ### use gcurl alias to authenticate curl requests:
 
-
+2 - Use proxy server in gcloud 
+This method creates a local proxy, which authenticate all the requests with the configured account.  
+https://cloud.google.com/run/docs/authenticating/developers#proxy
+```
+gcloud run services proxy SERVICE --project PROJECT-ID
+```
 
 
 
